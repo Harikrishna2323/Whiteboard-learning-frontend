@@ -8,7 +8,9 @@ import {
 
 let socket;
 
-let SERVER_URI = process.env.SERVER_URI || "http://localhost:4500";
+let SERVER_URI =
+  process.env.SERVER_URI ||
+  "https://whiteboard-learning-backend-o6ic2x202-harikrishna-bs-projects.vercel.app/";
 
 export const connectWithSocketServer = () => {
   socket = io(SERVER_URI);
